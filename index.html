@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dental Canvas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #f4f9ff;
+      padding: 15px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .clinic-name {
+      font-size: 28px;
+      font-weight: 700;
+      color: #035e7b;
+    }
+
+    .logo-container img {
+      height: 70px;
+    }
+
+    .hero-section {
+      padding: 60px 20px;
+    }
+
+    .hero-text h2 {
+      font-weight: 700;
+    }
+
+    .hero-btn {
+      background-color: #ff7043;
+      border: none;
+      padding: 10px 20px;
+      color: #fff;
+      font-weight: 500;
+      border-radius: 25px;
+    }
+
+    .icon-box {
+      background-color: #ff7043;
+      color: #fff;
+      padding: 30px;
+      text-align: center;
+      border-radius: 8px;
+      height: 100%;
+    }
+
+    .icon-box h6 {
+      font-weight: 700;
+    }
+
+    .section-title {
+      text-align: center;
+      font-weight: 700;
+      font-size: 24px;
+      margin: 60px 0 20px;
+    }
+
+    .grey-bg {
+      background-color: #f1f1f1;
+      padding: 0;
+    }
+
+    .grey-img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .grey-text {
+      padding: 50px;
+    }
+
+    .testimonial-box {
+      background-color: #ff7043;
+      color: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      height: 100%;
+    }
+
+    .team-section {
+      background-color: #ff7043;
+      color: white;
+      padding: 60px 0 40px 0;
+    }
+
+    .team-card {
+      background: white;
+      color: #000;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      height: 100%;
+    }
+
+    .team-card h6 {
+      font-weight: 700;
+    }
+
+    .team-card img {
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .rounded-image {
+      width: 100%;
+      max-width: 350px;
+      height: 350px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .contact-btn {
+      background-color: transparent;
+      border: 2px solid #ff7043;
+      color: #ff7043;
+      padding: 8px 20px;
+      border-radius: 25px;
+      transition: 0.3s;
+      font-weight: 600;
+    }
+
+    .contact-btn:hover {
+      background-color: #ff7043;
+      color: white;
+    }
+
+    .footer-main {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    .footer-main img {
+      height: 30px;
+      margin: 0 8px;
+      vertical-align: middle;
+    }
+
+    @media (max-width: 768px) {
+      .rounded-image {
+        max-width: 250px;
+        height: 250px;
+      }
+
+      .grey-text {
+        padding: 20px;
+      }
+    }
+    .btn
+    {
+      background-color: #ff7043;
+      border: 0px;
+      color: #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo-container">
+      <img src="Logo.jpg" alt="Dental Canvas Logo">
+    </div>
+    <div class="clinic-name">Dental Canvas</div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-section container">
+    <div class="row align-items-center">
+      <div class="col-md-6 hero-text">
+        <p class="text-muted">WELCOME TO</p>
+        <h2>Dental Clinic</h2>
+        <p>Providing comprehensive and compassionate dental care.</p>
+        <p class="contact-info">
+          <i class="bi bi-geo-alt-fill text-danger"></i><strong>123 STREET, NEW YORK, NY 10002</strong><br>
+          <i class="bi bi-telephone-fill text-danger"></i>(212) 123-4567
+        </p>
+        <button class="hero-btn">BOOK ONLINE</button>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="pic1.jpg" alt="Hero" class="rounded-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="container my-5">
+    <div class="row text-center g-4">
+      <div class="col-md-3">
+        <div class="icon-box">
+          <h6>DENTAL CARE</h6>
+          <p>General checkups, cleanings, and more</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="icon-box">
+          <h6>TEETH CLEANING</h6>
+          <p>Preventative care for a bright smile</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="icon-box">
+          <h6>WHITE FILLINGS</h6>
+          <p>Natural-looking cavity solutions</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="icon-box">
+          <h6>ROOT CANALS</h6>
+          <p>Painless root canal treatments</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION VISION -->
+  <section class="container about-section">
+    <h3 class="section-title">Mission, Vision & History</h3>
+    <div class="row">
+      <div class="col-md-6">
+        <p><i class="bi bi-check-circle-fill text-success"></i> <strong>VISION:</strong> Empowering smiles with latest techniques and compassionate care.</p>
+        <p><i class="bi bi-check-circle-fill text-success"></i> <strong>OUR TEAM:</strong> Led by professionals dedicated to your comfort and results.</p>
+      </div>
+      <div class="col-md-6">
+        <p><i class="bi bi-check-circle-fill text-success"></i> <strong>MISSION:</strong> Delivering outstanding dental care with trust and technology.</p>
+        <p><i class="bi bi-check-circle-fill text-success"></i> <strong>HISTORY:</strong> Serving the community for over 10 years with excellence.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES ABOUT IMAGE WITH GREY BG -->
+  <section class="grey-bg">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-md-6 p-0">
+          <img src="pic2.jpg" alt="Dental" class="grey-img">
+        </div>
+        <div class="col-md-6 grey-text">
+          <h5><strong>Dental Care Services</strong></h5>
+          <p>From pediatric to cosmetic, we offer a full spectrum of personalized care to restore and enhance your smile.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="container my-5">
+    <h3 class="section-title">What People Say?</h3>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="testimonial-box">
+          “Best dental experience I’ve ever had! Very friendly staff and quick procedure.”<br><strong>Stella Larson</strong>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial-box">
+          “Clean clinic, friendly staff, and amazing results. Highly recommended!”<br><strong>Nick Johnson</strong>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial-box">
+          “I finally love going to the dentist again! They truly care about patients.”<br><strong>Olga Ivanova</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUALITY ORAL HEALTH CARE -->
+  <section class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center">
+        <img src="Pic3.jpg" alt="Quality Care" class="rounded-image">
+      </div>
+      <div class="col-md-6">
+        <h5><strong>Quality Oral Health Care</strong></h5>
+        <p>We are committed to delivering the highest standard of dental care using state-of-the-art equipment.</p>
+        <a href="#" style="color: #007bff; text-decoration: underline;">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team-section">
+    <div class="container">
+      <h3 class="section-title text-white">Our Team</h3>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="team-card">
+            <img src="img1.jpg" alt="Dr. Bob">
+            <h6>Dr. Bob Brown</h6>
+            <p>Senior Dentist with 20+ years experience.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="team-card">
+            <img src="img3.jpg" alt="Dr. Mary">
+            <h6>Dr. Mary Smith</h6>
+            <p>Specialist in cosmetic and family dentistry.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="team-card">
+            <img src="img2.jpg"Dr. Nick">
+            <h6>Dr. Nick Dark</h6>
+            <p>Root canal and restorative expert.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="team-card">
+            <img src="img4.jpg" alt="Dr. May">
+            <h6>Dr. May Dowson</h6>
+            <p>Specialist in preventive dental care.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="team-card">
+            <img src="img6.jpg" alt="Dr. Betty">
+            <h6>Dr. Betty Nilson</h6>
+            <p>Expert in children’s dental health.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="team-card">
+            <img src="img5.jpg" alt="Dr. Adrian">
+            <h6>Dr. Adrian Scold</h6>
+            <p>Oral surgery and implants specialist.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COSMETIC DENTISTRY -->
+  <section class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <p class="text-muted">DENTISTRY CLINIC</p>
+        <h4><strong>Cosmetic Dentistry</strong></h4>
+        <p>We help you achieve a brighter, more confident smile with the latest cosmetic dentistry techniques.</p>
+        <p>From tooth whitening to veneers, our experts are here to enhance your smile.</p>
+        <button class="contact-btn">CONTACT US</button>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="pic6.jpg" alt="Cosmetic Dentistry" class="rounded-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center">
+        <img src="pic5.jpg" alt="Contact Us" class="rounded-image">
+      </div>
+      <div class="col-md-6">
+        <h5>Contact Us</h5>
+        <form>
+          <input type="text" class="form-control mb-3" placeholder="Your Name">
+          <input type="email" class="form-control mb-3" placeholder="Your Email">
+          <textarea class="form-control mb-3" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn-primary"><div class="btn"> Submit </div></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 CARDS BELOW CONTACT -->
+  <section class="container mb-5">
+    <div class="row text-center g-4">
+      <div class="col-md-4">
+        <div class="icon-box">
+          <i class="bi bi-telephone-fill fs-3 mb-2"></i>
+          <h6>Call Us</h6>
+          <p>(212) 123-4567</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="icon-box">
+          <i class="bi bi-geo-alt-fill fs-3 mb-2"></i>
+          <h6>Visit Us</h6>
+          <p>123 STREET, NEW YORK, NY 10002</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="icon-box">
+          <i class="bi bi-clock-fill fs-3 mb-2"></i>
+          <h6>Working Hours</h6>
+          <p>Mon - Sat 9AM - 7PM</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL FOOTER -->
+  <footer class="footer-main">
+    <span>&copy;</span> <img src="Logo.jpg" alt="Logo"> Dental Canvas
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
