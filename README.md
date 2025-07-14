@@ -1,2 +1,3 @@
 # Sample-Webpage-
-Dental sample webpage design
+Sample webpage design of a Dental clinic, using HTML, CSS and Bootstrap
+
